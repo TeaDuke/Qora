@@ -3,8 +3,19 @@
 QoraPlayer::QoraPlayer(QWidget *parent)
     : QWidget(parent)
 {
-    ui.setupUi(this);
+
+    Settings();
+    Connections();
 }
 
 QoraPlayer::~QoraPlayer()
 {}
+
+void QoraPlayer::Settings() {
+
+}
+
+void QoraPlayer::Connections() {
+    
+}
+
