@@ -21,6 +21,4 @@ QoraPlayer::QoraPlayer(QWidget *parent)
 }
 
 QoraPlayer::~QoraPlayer()
-{
-
-}
+{}
