@@ -10,7 +10,7 @@ class Sidebar : public QWidget
     Q_OBJECT
 
 public:
-    Sidebar(QWidget* parent = nullptr);
+    Sidebar();
     ~Sidebar();
 
 private:

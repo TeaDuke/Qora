@@ -3,6 +3,7 @@
 #include <QtWidgets>
 #include <QtCore>
 #include <QtGui>
+#include "storage.h"
 
 
 class MainWindow : public QWidget
@@ -10,16 +11,13 @@ class MainWindow : public QWidget
     Q_OBJECT
 
 public:
-    MainWindow(QWidget* parent = nullptr);
+    MainWindow();
     ~MainWindow();
 
 private:
     QTabWidget* m_tabw_main;
 
-    QLabel* m_lbl_storage_album;
-    QLabel* m_lbl_search_trecks;
+    Storage* m_storage;
 
     QVBoxLayout* m_vbox_main;
-    QVBoxLayout* m_vbox_storage;
-    QVBoxLayout* m_vbox_search;
 };

@@ -1,5 +1,8 @@
 #pragma once
 
+#include <QtWidgets>
+#include <QtCore>
+#include <QtGui>
 #include "main_window.h"
 #include "player.h"
 #include "sidebar.h"
