@@ -1,4 +1,6 @@
 <RCC>
-    <qresource prefix="QoraPlayer">
+    <qresource prefix="/QoraPlayer"/>
+    <qresource prefix="/">
+        <file>style.css</file>
     </qresource>
 </RCC>

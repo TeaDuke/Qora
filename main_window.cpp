@@ -3,9 +3,9 @@
 MainWindow::MainWindow(QWidget* parent)
 	: QWidget(parent)
 {
-	QGridLayout* box = new QGridLayout();
-	box->addWidget(new QLabel("main"));
-	setLayout(box);
+	m_tabw_main = new QTabWidget();
+	
+	
 }
 
 MainWindow::~MainWindow()

@@ -1,20 +1,13 @@
 MainWindow {
-    background-color: #b6ff00;
-    border: 2px solid #dedede;
+    background-color: black;
 }
 
 Player {
-    background-color: #00ff90;
-    border: 2px solid #dedede;
+    background-color: black;
 }
 
 Sidebar {
-    background-color: #ffd800;
-    border: 2px solid #dedede;
+    background-color: black;
 }
 
-QWidget {
-    background-color: #ffd800;
-    border: 2px solid #dedede;
-}
 
