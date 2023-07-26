@@ -1,7 +1,9 @@
 #pragma once
 
-#include <QtWidgets/QWidget>
-#include "ui_qora_player.h"
+#include "main_window.h"
+#include "player.h"
+#include "sidebar.h"
+
 
 class QoraPlayer : public QWidget
 {
@@ -12,5 +14,7 @@ public:
     ~QoraPlayer();
 
 private:
-    Ui::QoraPlayerClass ui;
+    Sidebar* m_sidebar;
+    MainWindow* m_main;
+    Player* m_player;
 };
