@@ -83,6 +83,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="album.cpp" />
     <ClCompile Include="main_window.cpp" />
     <ClCompile Include="player.cpp">
       <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">input</DynamicSource>
@@ -90,6 +91,7 @@
       <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">input</DynamicSource>
       <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).moc</QtMocFileName>
     </ClCompile>
+    <ClCompile Include="search.cpp" />
     <ClCompile Include="sidebar.cpp" />
     <ClCompile Include="storage.cpp" />
     <QtMoc Include="qora_player.h" />
@@ -113,6 +115,12 @@
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="storage.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="album.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="search.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

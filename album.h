@@ -2,6 +2,7 @@
 
 #include <QtWidgets>
 #include <QtCore>
+#include <QtMultimedia>
 
 
 class Album : public QWidget

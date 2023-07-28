@@ -7,7 +7,7 @@ Album::Album(QString title, QString author, QImage cover)
 	m_cover = cover;
 
 	m_title_label = new QLabel(m_title);
-	m_author_label = new QLabel(m_title);
+	m_author_label = new QLabel(m_author);
 	m_cover_label = new QLabel();
 	m_cover_label->setPixmap(QPixmap::fromImage(m_cover));
 

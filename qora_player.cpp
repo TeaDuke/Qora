@@ -5,11 +5,11 @@ QoraPlayer::QoraPlayer(QWidget *parent)
 {
     m_main = new MainWindow();
     m_player = new Player();
-    m_sidebar = new Sidebar();
+    m_sidebar = new Sidebar(m_main);
 
     QHBoxLayout* h_layout = new QHBoxLayout();
     h_layout->addWidget(m_sidebar, 1);
-    h_layout->addWidget(m_main, 4);
+    h_layout->addWidget(m_main, 6);
 
     QVBoxLayout* v_layout = new QVBoxLayout();
     v_layout->addLayout(h_layout, 9);
