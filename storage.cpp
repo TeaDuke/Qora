@@ -1,4 +1,4 @@
-#include "storage.h"
+﻿#include "storage.h"
 
 Storage::Storage() {
 	m_pr_current_index = 0;

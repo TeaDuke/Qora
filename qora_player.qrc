@@ -1,5 +1,4 @@
 <RCC>
-    <qresource prefix="/QoraPlayer"/>
     <qresource prefix="/">
         <file>style.css</file>
         <file>img/babangida-makarevich.jpg</file>

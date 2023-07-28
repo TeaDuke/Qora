@@ -1,10 +1,17 @@
 #include "album.h"
 
-Album::Album(QString title, QString author, QImage cover)
+Album::Album(QMediaPlayer* media)
 {
-	m_title = title;
-	m_author = author;
-	m_cover = cover;
+	m_media = media;
+
+	QMediaMetaData meta = m_media->metaData();
+
+	QVariant author = meta.value(QMediaMetaData::Author);
+	QVariant title = meta.value(QMediaMetaData::Title);
+	QVariant cover = meta.value(QMediaMetaData::CoverArtImage);
+	m_title = qvariant_cast<QString>(title);
+	m_author = qvariant_cast<QString>(author);
+	m_cover = qvariant_cast<QImage>(cover);
 
 	m_title_label = new QLabel(m_title);
 	m_author_label = new QLabel(m_author);

@@ -10,10 +10,11 @@ class Album : public QWidget
     Q_OBJECT
 
 public:
-    Album(QString title, QString author, QImage cover);
+    Album(QMediaPlayer* media);
     ~Album();
 
 private:
+    QMediaPlayer* m_media;
     QString m_title;
     QString m_author;
     QImage m_cover;

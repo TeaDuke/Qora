@@ -3,6 +3,8 @@
 #include <QtWidgets>
 #include <QtCore>
 #include <QtGui>
+#include <QtMultimedia>
+#include "album.h"
 
 class Storage : public QWidget
 {
