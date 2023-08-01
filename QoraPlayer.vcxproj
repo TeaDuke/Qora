@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{B4EB02EC-E8B4-4196-B584-EB5C0F10C78B}</ProjectGuid>
+    <ProjectGuid>{489BD04D-6418-4EB2-9E14-3A75069A7A27}</ProjectGuid>
     <Keyword>QtVS_v304</Keyword>
     <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0.22000.0</WindowsTargetPlatformVersion>
     <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">10.0.22000.0</WindowsTargetPlatformVersion>
@@ -83,41 +83,32 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="album.cpp" />
-    <ClCompile Include="main_window.cpp" />
-    <ClCompile Include="player.cpp">
-      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">input</DynamicSource>
-      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).moc</QtMocFileName>
-      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">input</DynamicSource>
-      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).moc</QtMocFileName>
-    </ClCompile>
     <ClCompile Include="search.cpp" />
     <ClCompile Include="sidebar.cpp" />
     <ClCompile Include="storage.cpp" />
+    <QtRcc Include="qora_player.qrc" />
+    <QtUic Include="qora_player.ui" />
     <QtMoc Include="qora_player.h" />
+    <ClCompile Include="album.cpp" />
+    <ClCompile Include="main_window.cpp" />
+    <ClCompile Include="player.cpp" />
     <ClCompile Include="qora_player.cpp" />
     <ClCompile Include="main.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <QtMoc Include="sidebar.h" />
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="main_window.h" />
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="player.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <QtRcc Include="qora_player.qrc" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="style.css" />
-  </ItemGroup>
-  <ItemGroup>
     <QtMoc Include="storage.h" />
   </ItemGroup>
   <ItemGroup>
+    <QtMoc Include="sidebar.h" />
+  </ItemGroup>
+  <ItemGroup>
     <QtMoc Include="album.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="player.h" />
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="search.h" />

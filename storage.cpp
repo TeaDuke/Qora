@@ -1,4 +1,4 @@
-﻿#include "storage.h"
+#include "storage.h"
 
 Storage::Storage() {
 	m_pr_current_index = 0;
@@ -22,7 +22,7 @@ Storage::~Storage() {
 }
 
 void Storage::Settings() {
-	
+
 	m_hbox_tabs->addWidget(m_btn_albums);
 	m_hbox_tabs->addWidget(m_btn_artists);
 	m_hbox_tabs->addWidget(m_btn_playlists);
