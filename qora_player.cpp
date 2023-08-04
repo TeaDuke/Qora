@@ -1,6 +1,6 @@
 #include "qora_player.h"
 
-QoraPlayer::QoraPlayer(QWidget *parent)
+QoraPlayer::QoraPlayer(QWidget* parent)
     : QWidget(parent)
 {
     m_main = new MainWindow();
