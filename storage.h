@@ -23,6 +23,10 @@ private:
 
     QTabWidget* m_tabw_storage;
 
+    QMediaPlayer* m_player;
+
+    Album* m_album;
+
     QHBoxLayout* m_hbox_tabs;
     QVBoxLayout* m_vbox_main;
 
